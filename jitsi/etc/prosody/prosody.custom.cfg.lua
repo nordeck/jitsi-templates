@@ -1,4 +1,4 @@
--- this is only for documentation, the actual changes are made by the installer
+-- This is only for documentation, the actual changes are made by the installer
 -- scripts.
 --
 -- Rate limits for incoming connections:
