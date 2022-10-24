@@ -4,9 +4,20 @@
 --
 -- Update TURNS host and port
 --
--- { type = "turns", host = "turn.nordeck.corp", port = 443, transport = "tcp", secret = true, ttl = 86400, algorithm = "turn" }
+--   { type = "turns", host = "turn.nordeck.corp", port = 443, transport = "tcp", secret = true, ttl = 86400, algorithm = "turn" }
 --
 --
 -- Enable https_ports with an empty list to prevent the service warning
 --
--- https_ports = { };
+--   https_ports = { };
+--
+--
+-- Token related options:
+--
+-- Disable empty token:
+--
+--   allow_empty_token = false
+--
+-- Set affiliation based on the token content:
+--
+--   "token_affiliation";
