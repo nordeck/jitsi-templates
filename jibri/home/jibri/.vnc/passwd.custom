@@ -1,0 +1,5 @@
+# This is only for documentation. The actual changes are made by the installer
+# scripts.
+#
+# The hash of VNC will be here. VNC is disabled by default and don't enabled it
+# on the production server.
