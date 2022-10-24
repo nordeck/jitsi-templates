@@ -2,22 +2,29 @@
 -- scripts.
 --
 --
--- Update TURNS host and port
+-- # Update TURNS host and port:
 --
 --   { type = "turns", host = "turn.nordeck.corp", port = 443, transport = "tcp", secret = true, ttl = 86400, algorithm = "turn" }
 --
 --
--- Enable https_ports with an empty list to prevent the service warning
+-- # Enable https_ports with an empty list to prevent the service warning
 --
 --   https_ports = { };
 --
 --
--- Token related options:
+-- # Token related options:
 --
--- Disable empty token:
+-- - Disable empty token:
 --
 --   allow_empty_token = false
 --
--- Set affiliation based on the token content:
+-- - Set affiliation based on the token content:
 --
 --   "token_affiliation";
+--
+--
+-- # Video SIP gateway related options:
+--
+-- - Add the SIP account into the admins list in the conference MUC:
+--
+--   admins = { "focus@auth.jitsi.nordeck.corp", "sip@sip.jitsi.nordeck.corp" }
